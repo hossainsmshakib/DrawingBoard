@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.toolbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #dcdcdc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.tool-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.tool-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.tool-btn:hover {
+  background-color: #e9ecef;
+}
+
+.erase-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.erase-option {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.erase-option:hover {
+  background-color: #f8f9fa;
+}
+
+.canvas {
+  display: block;
+  background-color: #ffffff;
+  cursor: crosshair;
+  margin-top: 60px;
+}
